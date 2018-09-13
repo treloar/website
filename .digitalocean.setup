@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Install node & npm
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Grab xsel so that serve will be happy
+sudo apt-get install -y xsel
+
+# Grab global install of npm serve to statically serve some files
+npm i -g serve
